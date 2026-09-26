@@ -1,0 +1,20 @@
+[
+    {
+        "run": 17,
+        "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
+        "config": {
+            "batch_size": 1,
+            "seq_len": 32,
+            "max_seq_len": 128,
+            "dropout_rate": 0.2,
+            "fused": "False",
+            "warmup_steps": 100,
+            "device": "cpu"
+        },
+        "train_loss": [5.404780864715576],
+        "valid_loss": [5.3935112953186035],
+        "gap": 0.495463,
+        "seen_tokens": 5495456,
+        "total_time": "17h 51m 9s"
+    }
+]
