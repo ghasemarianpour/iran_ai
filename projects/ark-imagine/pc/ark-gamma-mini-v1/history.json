@@ -1,0 +1,24 @@
+[
+    {
+        "run": 3,
+        "model": "ark-gamma-mini-v1-195K",
+        "parameters": 195073,
+        "dataset": "Alphabet_VISION_Dataset-1200S",
+        "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
+        "config": {
+            "IMAGE_SIZE": 28,
+            "BATCH_SIZE": 32,
+            "EPOCHS": 10,
+            "LR": 1e-3,
+            "SEED": 42,
+            "LATENT_DIM": 32,
+            "EMBED_DIM": 16,
+            "BASE_CHANNELS": 64,
+            "DEVICE": "cpu"
+        },
+        "train_loss": [0.21669451475143434],
+        "valid_loss": [0.22603888920375279],
+        "gap": 0.009344,
+        "total_time": "00:02:07"
+    }
+]
