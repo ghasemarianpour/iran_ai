@@ -3,7 +3,7 @@
         "run": 3,
         "model": "ark-gamma-mini-v1-195K",
         "parameters": 195073,
-        "dataset": "Alphabet_VISION_Dataset-1200S",
+        "dataset": "Alphabet_VISION_Dataset",
         "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
         "config": {
             "IMAGE_SIZE": 28,
