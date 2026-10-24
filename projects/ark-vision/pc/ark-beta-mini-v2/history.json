@@ -1,0 +1,33 @@
+[
+    {
+        "run": 3,
+        "model": "ark-beta-mini-v2-39K",
+        "parameters": 39500,
+        "task": "Image Classification",
+        "architecture": "CNN + Adaptive Average Pooling",
+        "input tensor": "1 x 100 x 100",
+        "input image size": "28x28",
+        "output classes": 12,
+        "dataset": "Alphabet_VISION_Dataset",
+        "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
+        "config": {
+            "IMAGE_WIDTH": 100,
+            "IMAGE_HEIGHT": 100,
+            "IMAGE_MODE": "L",
+            "BATCH_SIZE": 8,
+            "EPOCHS": 10,
+            "LR": 1e-3,
+            "WEIGHT_DECAY": 0.0,
+            "EARLY_STOPPING_PATIENCE": 5,
+            "MIN_DELTA": 1e-4,
+            "OPTIMIZER_NAME": "Adam",
+            "NUM_WORKERS": 0,
+            "DEVICE": "cpu"
+        },
+        "valid_accuracy": 0.8464285714285714,
+        "train_loss": [0.3582403920723924],
+        "valid_loss": [0.4299884695027556],
+        "gap": -0.071748,
+        "total_time": "00:05:36"
+    }
+]

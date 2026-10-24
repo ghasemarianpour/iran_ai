@@ -1,0 +1,36 @@
+[
+    {
+        "run": 3,
+        "model": "ark-beta-mini-v3-7.8M",
+        "parameters": 7866816,
+        "task": "class classification + token sequence generation",
+        "architecture": "CNN + GRU",
+        "image input channels": "1 (L)",
+        "input image size": "28x28",
+        "class count": 12,
+        "tokenizer vocabulary": 29876,
+        "dataset": "Alphabet_VISION_Dataset",
+        "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
+        "config": {
+            "IMAGE_WIDTH": 100,
+            "IMAGE_HEIGHT": 100,
+            "IMAGE_MODE": "L if DEVICE.type == cpu else RGB",
+            "IMAGE_CHANNELS": "1 if IMAGE_MODE == L else 3",
+            "BATCH_SIZE": 8,
+            "EPOCHS_PER_RUN": 10,
+            "LR": 1e-3,
+            "WEIGHT_DECAY": 0.0,
+            "NUM_WORKERS": 0,
+            "MAX_SEQUENCE_LENGTH": 64,
+            "EMBEDDING_DIM": 128,
+            "HIDDEN_DIM": 128,
+            "MAX_GRAD_NORM": 1.0,
+            "DEVICE": "cpu"
+        },
+        "valid_accuracy": 0.8107142857142857,
+        "train_loss": [0.20453254247383615],
+        "valid_loss": [0.9102438914975989],
+        "gap": 0.705711,
+        "total_time": "4.39 min"
+    }
+]
