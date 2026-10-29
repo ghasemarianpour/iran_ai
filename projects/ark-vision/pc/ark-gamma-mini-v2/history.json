@@ -1,0 +1,41 @@
+[
+    {
+        "model": "ark-gamma-mini-v2-10M",
+        "parameters": 10542565,
+        "task": "Text-to-Image",
+        "model type": "Conditional Generative Adversarial Network (cGAN)",
+        "generator": "Transformer Text Encoder + CNN Upsampling + Cross-Attention",
+        "discriminator": "CNN Image Encoder + Transformer Text Encoder",
+        "tokenizer vocabulary": 29874,
+        "dataset": "Alphabet_VISION_Dataset",
+        "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
+        "config": {
+            "IMAGE_SIZE": [64, 64],
+            "MAX_TEXT_LENGTH": 64,
+            "BATCH_SIZE": 4,
+            "EPOCHS": 50,
+            "LR_G": 2e-4,
+            "LR_D": 1e-4,
+            "LATENT_DIM": 64,
+            "TEXT_DIM": 128,
+            "BASE_CHANNELS": 32,
+            "NUM_HEADS": 4,
+            "NUM_TEXT_LAYERS": 2,
+            "LAMBDA_RECON_SINGLE": 10.0,
+            "LAMBDA_MISMATCH": 0.5,
+            "LABEL_SMOOTHING": 0.05,
+            "RESUME_FROM_PREVIOUS": "True",
+            "SEED": 42,
+            "NUM_WORKERS": 0,
+            "DEVICE": "cpu"
+        },
+        "train_D_loss": 1.0829853614171345,
+        "train_G_loss": 0.6235221227010092,
+        "train_adv_loss": 0.6235221227010092,
+        "train_recon_loss": 0.0,
+        "train_mismatch_loss": 0.758151094118754,
+        "valid_D_loss": 0.702131450176239,
+        "valid_G_loss": 0.6204245090484619,
+        "total_training_time": "0d 00h 25m 53s"
+    }
+]

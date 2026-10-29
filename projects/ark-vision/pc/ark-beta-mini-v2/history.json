@@ -1,6 +1,5 @@
 [
     {
-        "run": 3,
         "model": "ark-beta-mini-v2-39K",
         "parameters": 39500,
         "task": "Image Classification",

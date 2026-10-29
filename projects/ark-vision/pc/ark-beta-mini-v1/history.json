@@ -1,8 +1,11 @@
 [
     {
-        "run": 3,
         "model": "ark-beta-mini-v1-52K",
         "parameters": 52138,
+        "task": "Image Classification",
+        "architecture": "Convolutional Neural Network (CNN)",
+        "input image size": "28x28",
+        "output classes": 10,
         "dataset": "Alphabet_VISION_Dataset",
         "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
         "config": {
