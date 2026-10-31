@@ -1,0 +1,36 @@
+[
+    {
+        "model": "ark-alpha-mini-v1.5-7.9M",
+        "parameters": 7993600,
+        "architecture": "Transformer + Attention Mechanism",
+        "dataset": "Alphabet_NLP_Dataset-461,501T",
+        "tokenizer": "bpe-tokenizer_alphabet_nlp_dataset_30,011",
+        "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
+        "config": {
+            "batch_size": 5,
+            "seq_len": 128,
+            "vocab_size": 50000,
+            "max_seq_len": 128,
+            "n_layer": 8,
+            "n_head": 4,
+            "n_embd": 128,
+            "f_expnd": 4,
+            "dropout_rate": 0.05,
+            "max_lr": 3e-4,
+            "betas": [0.9, 0.95],
+            "weight_decay": 0.1,
+            "fused": "False",
+            "warmup_steps": 100,
+            "alpha": 0.5,
+            "seed": 42,
+            "device": "cpu",
+            "total_tokens": 0,
+            "log_interval_tokens": 10000
+        },
+        "train_loss": [7.176429271697998],
+        "valid_loss": [5.852470397949219],
+        "gap": -1.323959,
+        "seen_tokens": 277248,
+        "total_time": "0d 1h 35m 40s"
+    }
+]

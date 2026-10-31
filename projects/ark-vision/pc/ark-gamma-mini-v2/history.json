@@ -1,7 +1,7 @@
 [
     {
         "model": "ark-gamma-mini-v2-10M",
-        "parameters": 10542565,
+        "parameters": 10544167,
         "task": "Text-to-Image",
         "model type": "Conditional Generative Adversarial Network (cGAN)",
         "generator": "Transformer Text Encoder + CNN Upsampling + Cross-Attention",
@@ -10,6 +10,8 @@
         "dataset": "Alphabet_VISION_Dataset",
         "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
         "config": {
+            "IMAGE_MODE": "RGB",
+            "IMAGE_CHANNELS": 3,
             "IMAGE_SIZE": [64, 64],
             "MAX_TEXT_LENGTH": 64,
             "BATCH_SIZE": 4,
