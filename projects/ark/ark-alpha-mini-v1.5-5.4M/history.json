@@ -1,15 +1,15 @@
 [
     {
-        "model": "ark-alpha-mini-v1.5-7.9M",
-        "parameters": 7993600,
+        "model": "ark-alpha-mini-v1.5-5.4M",
+        "parameters": 5445504,
         "architecture": "Transformer + Attention Mechanism",
-        "dataset": "Alphabet_NLP_Dataset-461,501T",
-        "tokenizer": "bpe-tokenizer_alphabet_nlp_dataset_30,011",
+        "dataset": "Alphabet_NLP_Dataset-466,268T",
+        "tokenizer": "bpe-tokenizer_alphabet_nlp_dataset_30K",
         "hardware": "CPU 2.50 GHz, RAM 4.00 GB",
         "config": {
             "batch_size": 5,
             "seq_len": 128,
-            "vocab_size": 50000,
+            "vocab_size": "tokenizer.get_vocab_size()",
             "max_seq_len": 128,
             "n_layer": 8,
             "n_head": 4,
@@ -27,10 +27,10 @@
             "total_tokens": 0,
             "log_interval_tokens": 10000
         },
-        "train_loss": [7.176429271697998],
-        "valid_loss": [5.852470397949219],
-        "gap": -1.323959,
-        "seen_tokens": 277248,
-        "total_time": "0d 1h 35m 40s"
+        "train_loss": [6.578735828399658],
+        "valid_loss": [5.5801591873168945],
+        "gap": -0.998577,
+        "seen_tokens": 397056,
+        "total_time": "0d 1h 48m 20s"
     }
 ]
